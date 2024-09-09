@@ -23,10 +23,10 @@ app.post("/", async ({ body }) => {
     const texts = [
       "📌 New bookmark!\n",
       `${title}\n`,
-      `${description}\n`,
+      title === description ? '' : `${description}\n`,
       url,
     ].join('\n');
-    
+
     const formatedText = [
       "📌 New bookmark!\n",
       `${title}\n`,

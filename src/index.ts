@@ -79,11 +79,6 @@ app.post("/", async ({ body }) => {
 });
 
 try {
-  console.log({
-    identifier: process.env.BSKY_USER as string,
-    password: process.env.BSKY_PWD as string,
-  })
-
   const isLoggedIn = await agent.login({
     identifier: process.env.BSKY_USER as string,
     password: process.env.BSKY_PWD as string,

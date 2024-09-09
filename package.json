@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.8",
+    "@types/bun": "latest"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.13.6",
+    "dotenv": "^16.4.5",
+    "elysia": "^1.1.12"
+  },
+  "scripts": {
+    "start": "bun run src/index.ts"
+  },
+  "name": "atproto-bookmark",
+  "module": "index.ts",
+  "type": "module"
+}
